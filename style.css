@@ -8,6 +8,7 @@
     --botao-inativo: #20A3B5;
     --texto-fundo: rgba(7,92,87,0.3);
     --cor-da-borda: #00FFD1;
+    --contador-texto: #00B2FF;
 }
 
 body{
@@ -16,8 +17,14 @@ body{
     font-family: "Chakra Pecth", sans-serif;
 }
 
-.titulo-principal span {
-    color: var(--cor-da-borda);
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0;
 }
 
 .titulo-principal{
@@ -26,15 +33,9 @@ body{
     font-size: 32px;
 }
 
-.conteudo-principal{
-    display: flex;
-   flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1240px;
-    width: 100%;
-    margin: 0;
-   }
+.titulo-principal span {
+    color: var(--cor-da-borda);
+}
    
 .botao{
     font-family: "Chakra Petch", sans-serif;
@@ -60,7 +61,7 @@ body{
        display: block;
 }
 
-.ativo{
+.botao.ativo{
        background-color: var(--botao-ativo);
        border-color: var(--cor-da-borda);
 }
@@ -85,7 +86,7 @@ body{
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--verde);
+    color: var(--vermelho);
     text-transform: uppercase;
 }
 
@@ -105,7 +106,7 @@ body{
     margin: 0;
 }
 .contador-digito-texto{
-    color: var(--verde);
+    color: var(--contador-texto);
     font-size: 20px;
     margin: 0;
 }
